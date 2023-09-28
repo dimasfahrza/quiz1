@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #E4E4DE;
+    --second-bg-color: #C4C5BA;
+    --text-color: #1B1B1B;
+    --main-color: #595f39;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--second-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar a{
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+
+.heading{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 40px;
+}
+
+span{
+    color: var(--main-color);
+}
+
+.place1 img{
+    width: 45vw;
+    position: absolute;
+    border-radius: 45px;
+    top: 60%;
+    right: 7%;
+    transform: translate(0, -50%);
+}
+
+.bromo h2{
+    text-align: left;
+    line-height: 4;
+    font-size: 80px;
+}
+
+.bromo p{
+    font-size: 2rem;
+    /* line-height: ; */
+    max-width: 500px;
+}
+
+.wikipedia a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--text-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.wikipedia a:hover{
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.wikipedia1 a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--text-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+    margin-left: 58%;
+}
+
+.wikipedia a:hover{
+    background: var(--main-color);
+    color: var(--second-bg-color);
+}
+
+.place2 img{
+    width: 45vw;
+    position: absolute;
+    border-radius: 45px;
+    top: 150%;
+    left: 7%;
+    transform: translate(0, -50%);
+}
+
+.giliketapang h2{
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 2;
+    text-align: right;
+    margin-top: 10%;
+    margin-right: 15%;
+}
+
+.giliketapang p{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: left;
+    margin-top: 10%;
+    margin-left: 57%;
+  
+
+}
+
+.place3 img{
+    width: 45vw;
+    position: absolute;
+    border-radius: 45px;
+    top: 250%;
+    right: 7%;
+    transform: translate(0, -50%);
+}
+
+.waterfall h2{
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 2;
+    text-align: left;
+    margin-top: 10%;
+}
+
+.waterfall p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    max-width: 40%;
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px){
+    .header {
+        padding: 2rem 4%;
+    }
+}
+
+.home{
+    padding: 0 4%;
+}
+
+@media (max-width: 768px){
+    .header {
+        background: var(--second-bg-color);
+    }
+
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        padding: 1rem 4%;
+        background: var(--second-bg-color);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0 .2);
+        transition: .25s ease;
+        transition-delay: .25s ease;
+    }
+
+    .navbar.active{
+        left: 0;
+        transition-delay: 0s;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+}
+
